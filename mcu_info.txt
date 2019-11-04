@@ -1,0 +1,17 @@
+ATmega328P-PU Pin Functions
+
+Pin #   Pin Name    Function
+7       VCC         5V
+8       GND         GNDD – Digital Ground
+14      PB0         OUTPUT — High IN for Phase A
+15      PB1         OUTPUT — Low IN for Phase A
+16      PB2         OUTPUT — High IN for Phase B
+17      PB3         OUTPUT — Low IN for Phase B
+18      PB4         OUTPUT — High IN for Phase C
+19      PB5         OUTPUT — Low IN for Phase C
+23      PC0         INPUT — Back EMF Zero Crossing for Phase A
+24      PC1         INPUT — Back EMF Zero Crossing for Phase B
+25      PC2         INPUT — Back EMF Zero Crossing for Phase C
+26      PC3         INPUT — Analog Current Sense
+27      PC4         INPUT — Analog Temperature Sense
+28      PC5         INPUT — Analog Reference Input
