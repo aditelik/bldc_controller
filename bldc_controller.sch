@@ -39,11 +39,11 @@ $EndComp
 Wire Wire Line
 	5200 8150 5800 8150
 Wire Wire Line
-	5200 7350 5800 7350
+	5200 7550 5800 7550
 Wire Wire Line
 	5200 7450 5800 7450
 Wire Wire Line
-	5200 7550 5800 7550
+	5200 7350 5800 7350
 Wire Wire Line
 	5200 7650 5800 7650
 Wire Wire Line
@@ -228,9 +228,9 @@ Text Label 5350 8750 0    50   ~ 0
 nRESET
 Text Label 5350 9550 0    50   ~ 0
 BEMF_A
-Text Label 5350 7250 0    50   ~ 0
-BEMF_B
 Text Label 5350 9650 0    50   ~ 0
+BEMF_B
+Text Label 5350 7250 0    50   ~ 0
 BEMF_C
 Text Label 5350 8450 0    50   ~ 0
 I_SENSE
@@ -1682,7 +1682,7 @@ nMCU_ERR
 Wire Wire Line
 	5200 9550 5800 9550
 Wire Wire Line
-	5200 9650 5800 9650
+	5200 7250 5800 7250
 Wire Wire Line
 	5200 8450 5800 8450
 NoConn ~ 8050 5200
@@ -3568,11 +3568,11 @@ F 3 "http://www.vishay.com/docs/88525/1n5817.pdf" H 11000 1050 50  0001 C CNN
 $EndComp
 Text Label 5350 7750 0    50   ~ 0
 MCU_A_EN
-Text Label 5350 7550 0    50   ~ 0
+Text Label 5350 7350 0    50   ~ 0
 MCU_B_SIG
 Text Label 5350 7450 0    50   ~ 0
 MCU_C_SIG
-Text Label 5350 7350 0    50   ~ 0
+Text Label 5350 7550 0    50   ~ 0
 MCU_A_SIG
 Text Label 5350 8150 0    50   ~ 0
 MCU_C_EN
@@ -3744,7 +3744,7 @@ Wire Wire Line
 NoConn ~ 5200 8250
 NoConn ~ 5200 8350
 Wire Wire Line
-	5200 7250 5800 7250
+	5200 9650 5800 9650
 NoConn ~ 5200 9450
 Wire Wire Line
 	12100 1550 15000 1550
