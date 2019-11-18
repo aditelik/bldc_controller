@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 19)
-    (tracks 607)
+    (tracks 608)
     (zones 0)
     (modules 144)
     (nets 91)
@@ -11,9 +11,9 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (1 In1.Cu power hide)
-    (2 In2.Cu power hide)
+    (2 In2.Cu power)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.254)
+    (last_trace_width 1.27)
     (user_trace_width 0.254)
     (user_trace_width 0.508)
     (user_trace_width 0.762)
@@ -6037,6 +6037,7 @@
   (segment (start 142.24 112.005) (end 139.945 112.005) (width 0.762) (layer B.Cu) (net 1))
   (via (at 142.748 101.6) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 141.75 101.6) (end 142.748 101.6) (width 0.762) (layer B.Cu) (net 1))
+  (segment (start 121.92 53.34) (end 125.73 53.34) (width 1.27) (layer B.Cu) (net 1))
   (segment (start 108.969999 81.029999) (end 107.87 79.93) (width 0.254) (layer B.Cu) (net 2))
   (segment (start 109.382999 81.442999) (end 108.969999 81.029999) (width 0.254) (layer B.Cu) (net 2))
   (segment (start 114.516 100.33) (end 109.382999 95.196999) (width 0.254) (layer B.Cu) (net 2))
