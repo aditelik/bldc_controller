@@ -38,16 +38,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm339.pdf" H 8000 10100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 8150 5800 8150
-Wire Wire Line
-	5200 7550 5800 7550
-Wire Wire Line
-	5200 7450 5800 7450
-Wire Wire Line
-	5200 7350 5800 7350
-Wire Wire Line
-	5200 7650 5800 7650
-Wire Wire Line
-	5200 7750 5800 7750
 $Comp
 L power:GNDD #PWR083
 U 1 1 5DCB3729
@@ -173,8 +163,8 @@ $Comp
 L Device:C_Small C18
 U 1 1 5DE953CD
 P 6650 7850
-F 0 "C18" V 6421 7850 50  0000 C CNN
-F 1 "22pF" V 6512 7850 50  0000 C CNN
+F 0 "C18" V 6700 7700 50  0000 C CNN
+F 1 "22pF" V 6700 8050 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6650 7850 50  0001 C CNN
 F 3 "~" H 6650 7850 50  0001 C CNN
 	1    6650 7850
@@ -184,8 +174,8 @@ $Comp
 L Device:C_Small C19
 U 1 1 5DE969CA
 P 6650 8150
-F 0 "C19" V 6500 8150 50  0000 C CNN
-F 1 "22pF" V 6400 8150 50  0000 C CNN
+F 0 "C19" V 6600 8300 50  0000 C CNN
+F 1 "22pF" V 6600 7950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6650 8150 50  0001 C CNN
 F 3 "~" H 6650 8150 50  0001 C CNN
 	1    6650 8150
@@ -1307,8 +1297,8 @@ L Device:R_POT RV1
 U 1 1 5E7F9A52
 P 8950 9800
 F 0 "RV1" H 8880 9846 50  0000 R CNN
-F 1 "100K" H 8880 9755 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical_HandSoldering" H 8950 9800 50  0001 C CNN
+F 1 "5K" H 8880 9755 50  0000 R CNN
+F 2 "Potentiometer_SMD:Trimmer_Pot_SM" H 8950 9800 50  0001 C CNN
 F 3 "~" H 8950 9800 50  0001 C CNN
 	1    8950 9800
 	-1   0    0    1   
@@ -1582,8 +1572,6 @@ F 3 "~" H 8250 4500 50  0001 C CNN
 $EndComp
 Text Notes 8100 9300 0    50   ~ 10
 OVERCURRENT
-Wire Wire Line
-	9650 9550 10050 9550
 Connection ~ 10050 9550
 Text Label 8550 10000 0    50   ~ 0
 I_SENSE
@@ -2037,8 +2025,6 @@ Wire Notes Line
 Connection ~ 2950 950 
 Wire Wire Line
 	2950 950  3250 950 
-Wire Wire Line
-	4100 1850 4650 1850
 $Comp
 L Device:C C17
 U 1 1 5DC4554E
@@ -2054,12 +2040,12 @@ Connection ~ 5300 950
 Wire Wire Line
 	4850 950  5300 950 
 Wire Wire Line
-	5300 950  5750 950 
-Text Label 1250 2500 0    50   ~ 0
+	5300 950  5600 950 
+Text Label 1150 2500 0    50   ~ 0
 nRESET
-Text Label 1250 2700 0    50   ~ 0
+Text Label 1150 2700 0    50   ~ 0
 TXD
-Text Label 1250 2600 0    50   ~ 0
+Text Label 1150 2600 0    50   ~ 0
 RXD
 $Comp
 L power:+12V #PWR033
@@ -2319,16 +2305,16 @@ $EndComp
 $Comp
 L power:GNDD #PWR067
 U 1 1 5DC455F8
-P 7250 3000
-F 0 "#PWR067" H 7250 2750 50  0001 C CNN
-F 1 "GNDD" H 7254 2845 50  0000 C CNN
-F 2 "" H 7250 3000 50  0001 C CNN
-F 3 "" H 7250 3000 50  0001 C CNN
-	1    7250 3000
+P 7100 3000
+F 0 "#PWR067" H 7100 2750 50  0001 C CNN
+F 1 "GNDD" H 7104 2845 50  0000 C CNN
+F 2 "" H 7100 3000 50  0001 C CNN
+F 3 "" H 7100 3000 50  0001 C CNN
+	1    7100 3000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 2700 7250 3000
+	7100 2700 7100 3000
 $Comp
 L power:GNDPWR #PWR073
 U 1 1 5DC455FF
@@ -2676,8 +2662,6 @@ Wire Wire Line
 Connection ~ 11150 1750
 Wire Wire Line
 	11150 1750 11150 2000
-Wire Wire Line
-	7250 2700 7650 2700
 $Comp
 L CD4044BE:CD4044BE U5
 U 1 1 5DDC3EA1
@@ -3136,7 +3120,7 @@ Connection ~ 8350 950
 Wire Wire Line
 	8350 950  8400 950 
 Wire Wire Line
-	8000 950  8350 950 
+	8000 950  8150 950 
 Wire Wire Line
 	8000 1250 8000 1300
 Wire Wire Line
@@ -3394,7 +3378,7 @@ F 3 "http://www.ti.com/lit/ds/symlink/ua78.pdf" H 4950 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 1850 5950 1850
+	5250 1850 5600 1850
 $Comp
 L power:+10V #PWR061
 U 1 1 5DC455E9
@@ -3456,8 +3440,6 @@ F 3 "~" H 4100 2850 50  0001 C CNN
 $EndComp
 Connection ~ 4100 2700
 Wire Wire Line
-	5250 2700 5950 2700
-Wire Wire Line
 	8600 2000 8600 2100
 Wire Wire Line
 	8150 1800 8300 1800
@@ -3512,42 +3494,24 @@ F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 1150 9400 50  0001 L
 $EndComp
 NoConn ~ 5200 9350
 $Comp
-L power:+10V #PWR011
-U 1 1 5EDF6144
-P 1950 2650
-F 0 "#PWR011" H 1950 2500 50  0001 C CNN
-F 1 "+10V" H 1965 2823 50  0000 C CNN
-F 2 "" H 1950 2650 50  0001 C CNN
-F 3 "" H 1950 2650 50  0001 C CNN
-	1    1950 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR014
 U 1 1 5EDF6A20
-P 1700 2650
-F 0 "#PWR014" H 1700 2500 50  0001 C CNN
-F 1 "+5V" H 1715 2823 50  0000 C CNN
-F 2 "" H 1700 2650 50  0001 C CNN
-F 3 "" H 1700 2650 50  0001 C CNN
-	1    1700 2650
+P 1850 2750
+F 0 "#PWR014" H 1850 2600 50  0001 C CNN
+F 1 "+5V" H 1865 2923 50  0000 C CNN
+F 2 "" H 1850 2750 50  0001 C CNN
+F 3 "" H 1850 2750 50  0001 C CNN
+	1    1850 2750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 2800 1700 2650
-Wire Wire Line
-	1950 2900 1950 2650
+	1850 2900 1850 2750
 Wire Wire Line
 	1100 2500 1550 2500
 Wire Wire Line
 	1100 2600 1550 2600
 Wire Wire Line
 	1100 2700 1550 2700
-Wire Wire Line
-	1100 2800 1700 2800
-Wire Wire Line
-	1100 2900 1950 2900
-NoConn ~ 5200 8250
 NoConn ~ 5200 8350
 Wire Wire Line
 	5200 9650 5800 9650
@@ -3877,4 +3841,219 @@ F 3 "~" H 11800 1000 50  0001 C CNN
 	1    11600 1000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP12
+U 1 1 5DDB2562
+P 7400 2700
+F 0 "TP12" H 7250 3050 50  0000 L CNN
+F 1 "TestPoint" H 7100 2950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7600 2700 50  0001 C CNN
+F 3 "~" H 7600 2700 50  0001 C CNN
+	1    7400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP17
+U 1 1 5DE04A0E
+P 6850 2700
+F 0 "TP17" H 6700 3050 50  0000 L CNN
+F 1 "TestPoint" H 6550 2950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7050 2700 50  0001 C CNN
+F 3 "~" H 7050 2700 50  0001 C CNN
+	1    6850 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2700 7100 2700
+Connection ~ 7100 2700
+Connection ~ 7400 2700
+Wire Wire Line
+	7400 2700 7650 2700
+Wire Wire Line
+	7100 2700 7250 2700
+$Comp
+L Connector:TestPoint TP18
+U 1 1 5DE66F3A
+P 8300 2700
+F 0 "TP18" H 8150 3050 50  0000 L CNN
+F 1 "TestPoint" H 8000 2950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 8500 2700 50  0001 C CNN
+F 3 "~" H 8500 2700 50  0001 C CNN
+	1    8300 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 8300 2700
+$Comp
+L Connector:TestPoint TP21
+U 1 1 5DF0759C
+P 6150 7450
+F 0 "TP21" H 6100 7700 50  0000 L CNN
+F 1 "TestPoint" H 5850 7700 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6350 7450 50  0001 C CNN
+F 3 "~" H 6350 7450 50  0001 C CNN
+	1    6150 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP20
+U 1 1 5DEE8E56
+P 6000 7350
+F 0 "TP20" H 5950 7600 50  0000 L CNN
+F 1 "TestPoint" H 5700 7600 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6200 7350 50  0001 C CNN
+F 3 "~" H 6200 7350 50  0001 C CNN
+	1    6000 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP22
+U 1 1 5DF31B4A
+P 6300 7550
+F 0 "TP22" H 6250 7800 50  0000 L CNN
+F 1 "TestPoint" H 6000 7800 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6500 7550 50  0001 C CNN
+F 3 "~" H 6500 7550 50  0001 C CNN
+	1    6300 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP23
+U 1 1 5DF567A8
+P 6450 7650
+F 0 "TP23" H 6400 7900 50  0000 L CNN
+F 1 "TestPoint" H 6150 7900 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6650 7650 50  0001 C CNN
+F 3 "~" H 6650 7650 50  0001 C CNN
+	1    6450 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP24
+U 1 1 5DF74688
+P 6600 7750
+F 0 "TP24" H 6550 8000 50  0000 L CNN
+F 1 "TestPoint" H 6300 8000 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6800 7750 50  0001 C CNN
+F 3 "~" H 6800 7750 50  0001 C CNN
+	1    6600 7750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP19
+U 1 1 5DF948F5
+P 5800 8150
+F 0 "TP19" H 5700 8400 50  0000 L CNN
+F 1 "TestPoint" H 5500 8400 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 6000 8150 50  0001 C CNN
+F 3 "~" H 6000 8150 50  0001 C CNN
+	1    5800 8150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 7350 6000 7350
+Wire Wire Line
+	5200 7450 6150 7450
+Wire Wire Line
+	5200 7550 6300 7550
+Wire Wire Line
+	5200 7650 6450 7650
+Wire Wire Line
+	5200 7750 6600 7750
+$Comp
+L Connector:TestPoint TP25
+U 1 1 5E06FF4E
+P 5600 950
+F 0 "TP25" H 5550 1200 50  0000 L CNN
+F 1 "TestPoint" H 5300 1200 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 5800 950 50  0001 C CNN
+F 3 "~" H 5800 950 50  0001 C CNN
+	1    5600 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 950 
+Wire Wire Line
+	5600 950  5750 950 
+$Comp
+L Connector:TestPoint TP28
+U 1 1 5E0929C1
+P 8150 950
+F 0 "TP28" H 8100 1200 50  0000 L CNN
+F 1 "TestPoint" H 7850 1200 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 8350 950 50  0001 C CNN
+F 3 "~" H 8350 950 50  0001 C CNN
+	1    8150 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 8150 950 
+Wire Wire Line
+	8150 950  8350 950 
+Wire Wire Line
+	4100 1850 4650 1850
+$Comp
+L Connector:TestPoint TP26
+U 1 1 5E0B1911
+P 5600 1850
+F 0 "TP26" H 5550 2100 50  0000 L CNN
+F 1 "TestPoint" H 5300 2100 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 5800 1850 50  0001 C CNN
+F 3 "~" H 5800 1850 50  0001 C CNN
+	1    5600 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 1850
+Wire Wire Line
+	5600 1850 5950 1850
+Wire Wire Line
+	5250 2700 5600 2700
+$Comp
+L Connector:TestPoint TP27
+U 1 1 5E0F0F76
+P 5600 2700
+F 0 "TP27" H 5550 2950 50  0000 L CNN
+F 1 "TestPoint" H 5300 2950 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 5800 2700 50  0001 C CNN
+F 3 "~" H 5800 2700 50  0001 C CNN
+	1    5600 2700
+	1    0    0    -1  
+$EndComp
+Connection ~ 5600 2700
+Wire Wire Line
+	5600 2700 5950 2700
+$Comp
+L Connector:TestPoint TP29
+U 1 1 5E197897
+P 7250 2700
+F 0 "TP29" H 7100 3050 50  0000 L CNN
+F 1 "TestPoint" H 6950 2950 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Keystone_5000-5004_Miniature" H 7450 2700 50  0001 C CNN
+F 3 "~" H 7450 2700 50  0001 C CNN
+	1    7250 2700
+	-1   0    0    1   
+$EndComp
+Connection ~ 7250 2700
+Wire Wire Line
+	7250 2700 7400 2700
+$Comp
+L Connector:TestPoint TP30
+U 1 1 5E1CD393
+P 9550 9550
+F 0 "TP30" H 9300 9700 50  0000 L CNN
+F 1 "TestPoint" H 9150 9600 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 9750 9550 50  0001 C CNN
+F 3 "~" H 9750 9550 50  0001 C CNN
+	1    9550 9550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 9550 10050 9550
+Wire Wire Line
+	5200 8250 5800 8250
+Text Label 5350 8250 0    50   ~ 0
+ANALOG_IN
+Wire Wire Line
+	1850 2900 1100 2900
+Wire Wire Line
+	1100 2800 1550 2800
+Text Label 1150 2800 0    50   ~ 0
+ANALOG_IN
 $EndSCHEMATC
