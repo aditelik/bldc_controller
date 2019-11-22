@@ -1311,7 +1311,7 @@ F 1 "100K" H 8880 9755 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_Bourns_3339P_Vertical_HandSoldering" H 8950 9800 50  0001 C CNN
 F 3 "~" H 8950 9800 50  0001 C CNN
 	1    8950 9800
-	-1   0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	8950 9600 8950 9650
