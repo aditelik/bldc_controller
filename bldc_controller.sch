@@ -3742,17 +3742,6 @@ Wire Wire Line
 	11600 4750 11800 4750
 Connection ~ 11800 4750
 Connection ~ 11600 4750
-$Comp
-L Device:Ferrite_Bead FB2
-U 1 1 5DD92F7E
-P 7800 2700
-F 0 "FB2" V 7600 2700 50  0000 C CNN
-F 1 "BL01RN1A1D2B" V 8000 2700 50  0000 C CNN
-F 2 "Ferrite_THT:Ferrite_Bead_TH" V 7730 2700 50  0001 C CNN
-F 3 "~" H 7800 2700 50  0001 C CNN
-	1    7800 2700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	7950 2700 8300 2700
 $Comp
@@ -3781,4 +3770,36 @@ Wire Wire Line
 	1500 1650 1500 1750
 Wire Wire Line
 	1150 1450 1950 1450
+$Comp
+L Device:R_US R52
+U 1 1 5E2BCD4A
+P 7800 2600
+F 0 "R52" V 7700 2450 50  0000 C CNN
+F 1 "0" V 7700 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7840 2590 50  0001 C CNN
+F 3 "~" H 7800 2600 50  0001 C CNN
+	1    7800 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R53
+U 1 1 5E2DB525
+P 7800 2800
+F 0 "R53" V 7900 2650 50  0000 C CNN
+F 1 "0" V 7900 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7840 2790 50  0001 C CNN
+F 3 "~" H 7800 2800 50  0001 C CNN
+	1    7800 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 2600 7650 2700
+Wire Wire Line
+	7650 2700 7650 2800
+Connection ~ 7650 2700
+Wire Wire Line
+	7950 2600 7950 2700
+Connection ~ 7950 2700
+Wire Wire Line
+	7950 2700 7950 2800
 $EndSCHEMATC
