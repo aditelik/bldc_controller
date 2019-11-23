@@ -1676,8 +1676,6 @@ Wire Wire Line
 NoConn ~ 8050 5200
 NoConn ~ 8050 5100
 NoConn ~ 6500 4500
-Wire Wire Line
-	950  9400 650  9400
 $Comp
 L power:GNDD #PWR04
 U 1 1 5EB202F0
@@ -1723,8 +1721,8 @@ F 3 "" H 1250 9200 50  0001 C CNN
 	1    1250 9200
 	1    0    0    -1  
 $EndComp
-Text Label 650  9400 0    50   ~ 0
-nI_ERROR
+Text Label 700  9400 0    50   ~ 0
+nI_ERR
 $Comp
 L power:+5V #PWR018
 U 1 1 5E33C12F
@@ -3490,7 +3488,7 @@ F 1 "2N7002E" H 1356 9355 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 1350 9325 50  0001 L CIN
 F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 1150 9400 50  0001 L CNN
 	1    1150 9400
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 NoConn ~ 5200 9350
 $Comp
@@ -4056,4 +4054,6 @@ Wire Wire Line
 	1100 2800 1550 2800
 Text Label 1150 2800 0    50   ~ 0
 ANALOG_IN
+Wire Wire Line
+	700  9400 950  9400
 $EndSCHEMATC
